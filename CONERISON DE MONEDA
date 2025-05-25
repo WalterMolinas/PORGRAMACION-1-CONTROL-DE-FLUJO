@@ -1,0 +1,40 @@
+#include <stdio.h>
+//El usuario elige la conversión:
+//Dólares a Euros
+//Dólares a Pesos
+//Euros a Dólares
+	
+int main() {
+	float dolar,euro,conversion;
+	int opcion;
+	printf("Elija una opcion de conversion:\n1-Dólares a Euros\n2-Dolares a Pesos\n3-Euros a Dólares\n");
+	scanf("%d", &opcion);
+	switch(opcion){
+	case 1:
+		printf("Cuantos dolares desea convertir a Euros: $");
+		scanf("%f", &dolar);
+		conversion=dolar*0.88;
+		printf("\n");
+		printf("%.2f Dolares son iguales a $%.2f Euros",dolar,conversion);
+		break;
+	case 2:
+		printf("Cuantos dolares desea convertir a Pesos: $");
+		scanf("%f", &dolar);
+		conversion=dolar*1137.99;
+		printf("\n");
+		printf("%.2f Dolares son iguales a $%.2f Pesos",dolar,conversion);
+		break;
+	case 3:
+		printf("Cuantos Euros desea convertir a Dolares: $");
+		scanf("%f", &euro);
+		conversion=euro*1.14;
+		printf("\n");
+		printf("%.2f Euros son iguales a $%.2f Dolares",euro,conversion);
+		break;
+	default:
+		printf("Opcion Invalida");
+		
+	}
+	return 0;
+}
+	
