@@ -1,0 +1,31 @@
+#include <stdio.h>
+//El programa debe solicitar tres números y mostrar cuál es el mayor.
+
+int main() {
+	int a,b,c,mayor;
+	printf("Ingrese 3 numeros y el algoritmo indicara cual es el mayor\n");
+	scanf("%d",&a);
+	scanf("%d",&b);
+	scanf("%d",&c);
+	mayor=a;
+	if (a>b){
+		if (a>c){
+		mayor=a;
+		printf("El mayor es: %d\n",a);
+		}
+	}
+	if (b>a){
+		if (b>c){
+			mayor=b;
+			printf("El mayor es: %d\n",b);
+		}
+	}
+	if (c>b){
+		if (b>a){
+			mayor=c;
+			printf("El mayor es: %d\n",c);
+		}
+	}
+	return 0;
+}
+
