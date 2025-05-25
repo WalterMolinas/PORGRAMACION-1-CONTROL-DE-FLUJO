@@ -1,0 +1,17 @@
+#include <stdio.h>
+//Haga un programa que ingresado un número de 4 cifras y los separe en cifras, por ejemplo si ingreso 1234 me muestra 1, 2, 3 y 4. 
+
+int main() {
+	int numero,cifra2,cifra3;
+	printf("Ingrese un numero de 4 cifras\n");
+	scanf("%d",&numero);
+	if(numero<=0 || numero>=10000 || numero<1000){
+		printf("Error ingrese un numero que sea de 4 cifras\n");	
+	}else{
+		printf("La primera cifra será: %d\n",numero/1000);
+		printf("La segunda cifra será: %d\n",(numero%1000)/100);
+		printf("La tercera cifra será: %d\n",((numero%1000)%100)/10);
+		printf("La cuarta cifra será: %d\n",(((numero%1000)%100)%10)/1);
+	}
+	return 0;
+}
