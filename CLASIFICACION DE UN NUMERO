@@ -1,0 +1,20 @@
+#include <stdio.h>
+//Solicita un número al usuario y determina si es positivo, negativo o cero. Si es positivo, verifica si es par o impar.
+int main() {
+	int numero;
+	printf("Ingresar un numero \n");
+	scanf("%d", &numero);
+	if(numero>0){
+		printf("El numero es un Positivo\n");
+		if(numero%2==0){
+			printf("Ademas es Par");
+		}
+	}
+	if(numero<0){
+		printf("El numero es un Negativo\n");
+	}
+	if(numero==0){
+		printf("El numero es cero\n");
+	}
+	return 0;
+}
