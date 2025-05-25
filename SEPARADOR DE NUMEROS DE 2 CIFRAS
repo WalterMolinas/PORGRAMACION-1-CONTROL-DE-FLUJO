@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Haga un programa que ingresado un número de 2 cifras y los separa la primera cifra y la segunda, por ejemplo si ingreso 12 me muestra 1  y 2. 
+
+int main() {
+	int numero;
+	printf("Ingrese un numero de 2 cifras\n");
+	scanf("%d",&numero);
+	if(numero<10 || numero>=100){
+		printf("Error ingrese un numero que sea de 2 cifras\n");
+	}else{
+		printf("La primera cifra es %d y la segunda %d",numero/10,numero%10);
+	}
+	return 0;
+}
