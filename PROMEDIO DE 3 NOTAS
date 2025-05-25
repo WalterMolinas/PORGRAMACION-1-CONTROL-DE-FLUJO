@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Solicita tres notas al usuario y muestra el promedio.
+int main() {
+	float not1,not2,not3,promedio;
+	printf("Ingrese primera nota 1-10\n");
+	scanf ("%f", &not1);
+	printf("Ingrese segunda nota 1-10\n");
+	scanf ("%f", &not2);
+	printf("Ingrese tercera nota 1-10\n");
+	scanf ("%f", &not3);
+	promedio=(not1+not2+not3)/3;
+	printf("El promedio de las 3 notas sera de %.2f",promedio);
+	return 0;
+}
